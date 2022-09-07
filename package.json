@@ -1,0 +1,19 @@
+{
+  "name": "hexlet-node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/inbarvenko/Hexlet-Node.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/inbarvenko/Hexlet-Node/issues"
+  },
+  "homepage": "https://github.com/inbarvenko/Hexlet-Node#readme"
+}
