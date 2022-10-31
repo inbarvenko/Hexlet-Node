@@ -92,8 +92,31 @@
 }
 
 .first_image{
-  width: 100%;
   max-width:500px;
+  width: 100%;
+}
+
+.button-header{
+  position: relative;
+  display: inline-block;
+  padding: 20px 40px;
+  line-height: 27px;
+  border: 2px solid #00F500;
+  background-color: #ffffff;
+  font-style: normal;
+  font: 800 16px "MontserratRegular", sans-serif;
+  text-align: center;
+  text-decoration: none;
+  letter-spacing: 1.5px;
+  color: #00F500;
+  transition: all 0.25s ease;
+  appearance: none;
+  margin: 5px;
+}
+
+.button-header:hover {
+  color: #ffffff;
+  background-color: #00F500;
 }
 
 @font-face {
