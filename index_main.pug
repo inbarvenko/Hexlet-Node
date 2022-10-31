@@ -1,0 +1,130 @@
+doctype html
+html(lang="ru")
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  // Подключение Bootstrap
+  script(src='../node_modules/jquery/dist/jquery.min.js')
+  script(src='../node_modules/popper.js/dist/umd/popper.js')
+  script(src='../node_modules/bootstrap/dist/js/bootstrap.min.js')
+  script(src='../js/slider_js.js')
+  link(rel='stylesheet' href='../node_modules/bootstrap/dist/css/bootstrap.min.css')
+  link(rel='stylesheet' href='../css/slider_css.css')
+  title Мебельный салон Люди Кухни
+
+body
+  .container
+    .row
+      .col-6
+        h1.first-text Мы - мебельный салон Люди Кухни! Радуем клиентов более 20 лет. Помогаем с выбором, направляем по материалам, разделяем ваши взгляды и решаем проблемы!
+      .col-6.first-image
+        img(src='../img/first.png' alt='Фотография')
+  .slider
+    svg.slider__mask(xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewbox='0 0 1920 1080' width='0' height='0')
+      defs
+        // Slide 1
+        pattern#pattern1l(patternunits='userSpaceOnUse' x='-20px' width='570' height='520' viewbox='0 0 570 520')
+          image(xlink:href='https://svgshare.com/i/nX0.svg' width='700px' height='700px')
+        pattern#pattern1r(patternunits='userSpaceOnUse' x='340px' width='570' height='520' viewbox='0 0 570 520')
+          image(xlink:href='https://svgshare.com/i/nZC.svg' width='700px' height='700px')
+        // Slide 2
+        pattern#pattern2l(patternunits='userSpaceOnUse' width='570' height='520' viewbox='0 0 570 520')
+          image(xlink:href='https://svgshare.com/i/nXC.svg' width='700px' height='700px')
+        pattern#pattern2r(patternunits='userSpaceOnUse' x='340px' width='570' height='520' viewbox='0 0 570 520')
+          image(xlink:href='https://svgshare.com/i/nb0.svg' width='700px' height='700px')
+        // Slide 3
+        pattern#pattern3l(patternunits='userSpaceOnUse' width='570' height='520' viewbox='0 0 570 520')
+          image(xlink:href='https://svgshare.com/i/n_g.svg' width='700px' height='700px')
+        pattern#pattern3r(patternunits='userSpaceOnUse' x='340px' width='570' height='520' viewbox='0 0 570 520')
+          image(xlink:href='https://svgshare.com/i/nas.svg' width='700px' height='700px')
+    #slide-1.slide
+      .slide__images
+        .slide__image.slide__image--left
+          svg(viewbox='0 0 900 520' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xml:space='preserve' x='0px' y='0px')
+            path(d='M 0 0 L 0 520 L 350 520 L 570 0 L 0 0 Z' fill='url(#pattern1l)')
+        .slide__image.slide__image--right
+          svg(viewbox='0 0 900 520' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xml:space='preserve' x='0px' y='0px')
+            path(d='M 900 520 L 900 0 L 560 0 L 338 520 L 900 520 Z' fill='url(#pattern1r)')
+    #slide-2.slide
+      .slide__images
+        .slide__image.slide__image--left
+          svg(viewbox='0 0 900 520' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xml:space='preserve' x='0px' y='0px')
+            path(d='M 0 0 L 0 520 L 350 520 L 570 0 L 0 0 Z' fill='url(#pattern2l)')
+        .slide__image.slide__image--right
+          svg(viewbox='0 0 900 520' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xml:space='preserve' x='0px' y='0px')
+            path(d='M 900 520 L 900 0 L 560 0 L 338 520 L 900 520 Z' fill='url(#pattern2r)')
+    #slide-3.slide
+      .slide__images
+        .slide__image.slide__image--left
+          svg(viewbox='0 0 900 520' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xml:space='preserve' x='0px' y='0px')
+            path(d='M 0 0 L 0 520 L 350 520 L 570 0 L 0 0 Z' fill='url(#pattern3l)')
+        .slide__image.slide__image--right
+          svg(viewbox='0 0 900 520' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xml:space='preserve' x='0px' y='0px')
+            path(d='M 900 520 L 900 0 L 560 0 L 338 520 L 900 520 Z' fill='url(#pattern3r)')
+    .slider__pagination
+      a.button(href='#slide-1') Классика
+      a.button(href='#slide-2') Модерн
+      a.button(href='#slide-3') Минимализм
+  .container
+    .row.row-cols-1.row-cols-sm-2.row-cols-lg-4
+      .col.mb-3
+        article.card
+          img.card-img-top(src='../img/ya1.jpg' alt='Фотография')
+          .card-body
+            h2.card-title.h4 Настенные полки
+            p.card-text
+              | Описание товара
+            a.btn.btn-outline-primary(href='#') Перейти
+      .col.mb-3
+        article.card
+          img.card-img-top(src='../img/ya2.png' alt='Фотография')
+          .card-body
+            h2.card-title.h4 Серванты
+            p.card-text
+              | Описание товара
+            a.btn.btn-outline-success(href='#') Перейти
+      .col.mb-3
+        article.card
+          img.card-img-top(src='../img/ya3.jpg' alt='Фотография')
+          .card-body
+            h2.card-title.h4 Перегородки
+            p.card-text
+              | Описание товара
+            a.btn.btn-primary(href='#') Перейти
+      .col.mb-3
+        article.card
+          img.card-img-top(src='../img/ya4.png' alt='Фотография')
+          .card-body
+            h2.card-title.h4 Стеллажи
+            p.card-text
+              | Описание товара
+            a.btn.btn-primary(href='#') Перейти
+    .row.mb-3
+      .col-12
+        article.card
+          img.card-img-top(src='../img/ya5.png' alt='Фотография')
+          .card-body
+            h2.card-title.h4 Кухни
+            p.card-text
+              | Описание товара
+            a.btn.btn-primary(href='#') Перейти
+    .row
+      .col-sm-4.mb-3
+        article.card
+          img.card-img-top(src='../img/ya7.jpg' alt='Фотография')
+          .card-body
+            h2.card-title.h4 Материалы
+            p.card-text
+              | Описание товара
+            a.btn.btn-primary(href='#') Перейти
+      .col.mb-3
+        article.card
+          img.card-img-top(src='../img/ya6.png' alt='Фотография')
+          .card-body
+            h2.card-title.h4 Шкафы-купе
+            p.card-text
+              | Описание товара
+            a.btn.btn-primary(href='#') Перейти
+// Карта
+
+// Футер
