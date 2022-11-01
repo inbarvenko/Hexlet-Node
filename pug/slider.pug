@@ -1,20 +1,4 @@
-doctype html
-html(lang="ru")
-head
-  meta(charset='UTF-8')
-  meta(name='viewport' content='width=device-width, initial-scale=1.0')
-  // Подключение Bootstrap
-  script(src='../node_modules/jquery/dist/jquery.min.js')
-  script(src='../node_modules/popper.js/dist/umd/popper.js')
-  script(src='../node_modules/bootstrap/dist/js/bootstrap.min.js')
-  script(src='../js/slider_js.js')
-  link(rel='stylesheet' href='../node_modules/bootstrap/dist/css/bootstrap.min.css')
-  link(rel='stylesheet' href='../css/slider_css.css')
-  title Мебельный салон Люди Кухни
-
-body
-  include header.pug
-  .slider
+.slider
     svg.slider__mask(xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewbox='0 0 1920 1080' width='0' height='0')
       defs
         // Slide 1
@@ -60,66 +44,3 @@ body
       a.button(href='#slide-1') Классика
       a.button(href='#slide-2') Модерн
       a.button(href='#slide-3') Минимализм
-  .container
-    .row.row-cols-1.row-cols-sm-2.row-cols-lg-4
-      .col.mb-3
-        article.card
-          img.card-img-top(src='../img/ya1.jpg' alt='Фотография')
-          .card-body
-            h2.card-title.h4 Настенные полки
-            p.card-text
-              | Описание товара
-            a.btn.btn-outline-primary(href='#') Перейти
-      .col.mb-3
-        article.card
-          img.card-img-top(src='../img/ya2.png' alt='Фотография')
-          .card-body
-            h2.card-title.h4 Серванты
-            p.card-text
-              | Описание товара
-            a.btn.btn-outline-success(href='#') Перейти
-      .col.mb-3
-        article.card
-          img.card-img-top(src='../img/ya3.jpg' alt='Фотография')
-          .card-body
-            h2.card-title.h4 Перегородки
-            p.card-text
-              | Описание товара
-            a.btn.btn-primary(href='#') Перейти
-      .col.mb-3
-        article.card
-          img.card-img-top(src='../img/ya4.png' alt='Фотография')
-          .card-body
-            h2.card-title.h4 Стеллажи
-            p.card-text
-              | Описание товара
-            a.btn.btn-primary(href='#') Перейти
-    .row.mb-3
-      .col-12
-        article.card
-          img.card-img-top(src='../img/ya5.png' alt='Фотография')
-          .card-body
-            h2.card-title.h4 Кухни
-            p.card-text
-              | Описание товара
-            a.btn.btn-primary(href='#') Перейти
-    .row
-      .col-sm-4.mb-3
-        article.card
-          img.card-img-top(src='../img/ya7.jpg' alt='Фотография')
-          .card-body
-            h2.card-title.h4 Материалы
-            p.card-text
-              | Описание товара
-            a.btn.btn-primary(href='#') Перейти
-      .col.mb-3
-        article.card
-          img.card-img-top(src='../img/ya6.png' alt='Фотография')
-          .card-body
-            h2.card-title.h4 Шкафы-купе
-            p.card-text
-              | Описание товара
-            a.btn.btn-primary(href='#') Перейти
-// Карта
-
-// Футер

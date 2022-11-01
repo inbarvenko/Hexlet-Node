@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat:600");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,800");
 
 .slider {
   width: 100vw;
@@ -83,17 +83,42 @@
   background-color: #ffffff;
 }
 
-.first_text{
-  letter-spacing: 10px;
-  text-align: left;
-  font: 700 12px "Montserrat", sans-serif;
+.first-text{
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: calc(12px + 28 * (50vw/1280));
   color: #0D044A;
-  margin-bottom: 10px;
+  margin-bottom: calc(10px + 10 * (50vw/1000));
+}
+
+.first-text-little{
+  font-family: "Montserrat", sans-serif;
+  text-align: left;
+  font-size: calc(12px + 28 * (35vw/1280));
+}
+
+@media (max-width: 767px){
+  .first-text{
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: calc(12px + (28 + 28 * 0.7) * ((50vw-320px)/1280));
+    color: #0D044A;
+    margin-bottom: 30px;
+  }
+
+  .first-text-little{
+    font-family: "Montserrat", sans-serif;
+    text-align: left;
+    font-size: calc(12px + (28 + 28 * 0.7) * ((35vw-320px)/1280));
+  }
 }
 
 .first_image{
-  max-width:500px;
+  max-width:600px;
   width: 100%;
+  align-items: center;
 }
 
 .button-header{
@@ -104,7 +129,7 @@
   border: 2px solid #00F500;
   background-color: #ffffff;
   font-style: normal;
-  font: 800 16px "MontserratRegular", sans-serif;
+  font: 500 16px "Montserrat", sans-serif;
   text-align: center;
   text-decoration: none;
   letter-spacing: 1.5px;
@@ -119,9 +144,40 @@
   background-color: #00F500;
 }
 
-@font-face {
-  font-family: "MontserratRegular";
-  src: url("../fonts/Montserrat-Regular.woff") format("truetype");
+.map-image{
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/map.jpg");
+  height: 50vh;
+}
+
+.contacts{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 30px;
+  padding-left: 30px;
+  color: #ffffff;
+  justify-items: center;
+
+  font-family: "Montserrat", sans-serif;
+  text-align: left;
+  font-weight: 400;
+  font-size: calc(8px + 28 * (35vw/1280));
+}
+
+.contacts-row{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 3px;
+}
+
+.font-normal{
   font-style: normal;
-  font-weight: normal;
-  }
+  font-weight: 400;
+}
+
+.zelen{
+  width: calc(150px + 25 * (100vw/1280));
+  display: block;
+  position: absolute;
+}
