@@ -161,7 +161,7 @@
   font-family: "Montserrat", sans-serif;
   text-align: left;
   font-weight: 400;
-  font-size: calc(8px + 28 * (35vw/1280));
+  font-size: calc(7px + 28 * (35vw/1280));
 }
 
 .contacts-row{
@@ -180,4 +180,17 @@
   width: calc(150px + 25 * (100vw/1280));
   display: block;
   position: absolute;
+}
+
+.bck{
+  background: url("../img/background.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.form-bck{
+  background-color: #FCFCFC;
+  border: 5px solid #00F500;
+  height: 50vh;
 }
