@@ -194,3 +194,7 @@
   border: 5px solid #00F500;
   height: 50vh;
 }
+
+footer {
+  flex: 0 0 auto;
+}
